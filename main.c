@@ -6,7 +6,7 @@
 /*   By: fford <fford@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 19:40:18 by fford             #+#    #+#             */
-/*   Updated: 2019/12/15 16:46:52 by fford            ###   ########.fr       */
+/*   Updated: 2019/12/15 16:53:46 by fford            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int ac, char **av)
 {
 	t_coord	coord;
 	t_val	val;
-	char 	***temp;
+	char	***temp;
 
 	if (ac != 2)
 		put_error("usage: fillit input_file\n");
