@@ -100,3 +100,9 @@ char	***read_tetr(int fd, char ***block, int count, int k)
 	}
 	return (block);
 }
+
+void	put_error(char *s)
+{
+	ft_putstr(s);
+	exit(1);
+}

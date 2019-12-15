@@ -6,7 +6,7 @@
 /*   By: fford <fford@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/14 21:31:52 by fford             #+#    #+#             */
-/*   Updated: 2019/12/15 00:18:02 by fford            ###   ########.fr       */
+/*   Updated: 2019/12/15 16:50:32 by fford            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char			**move_tetr(char **block, t_coord *coord);
 int				count_tetr(int fd);
 char			***read_tetr(int fd, char ***block, int count, int k);
 char			***alf_tetr(char ***block, int count);
+void			put_error(char *s);
 
 char			**create_field(void);
 void			free_field(char **field);

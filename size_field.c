@@ -6,7 +6,7 @@
 /*   By: fford <fford@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/14 23:39:11 by fford             #+#    #+#             */
-/*   Updated: 2019/12/15 15:03:55 by fford            ###   ########.fr       */
+/*   Updated: 2019/12/15 15:53:24 by fford            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,10 @@ void	count_field(t_val *val, char **av)
 {
 	val->fd = open(av[1], O_RDONLY);
 	if (val->fd == -1)
-		exit(0);
+	{
+		ft_putstr("error\n");
+		exit(1);
+	}
 	val->count = count_tetr(val->fd);
 	close(val->fd);
 }
